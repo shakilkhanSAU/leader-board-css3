@@ -136,3 +136,131 @@ main{
     color: rgb(163, 163, 163);
 }
 /* courses style end  here  */
+/* media query for mobile  */
+
+@media only screen and (max-width: 688px) {
+    /* navigation styling start here */
+    header{
+        display: none;
+    }
+    /* navigation styling end here */
+    .container{
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        padding: 0;
+        border-radius: 0;
+        margin-bottom: 0px;
+    }
+    .section-title{
+        color: var(--main-color);
+        text-align: center;
+    }
+    .players, .blog-post{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0;
+    }
+    .player{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .blog{
+        display: flex;
+        padding: 20px;
+        margin: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .blog .thambnail img{
+        width: 100%;
+        padding-left: auto;
+        border: .3px solid gray;
+        border-radius: 17px;
+    }
+    .blog .thambnail{
+        padding: 0;
+    }
+    .nav-area{
+        display: none;
+    }
+    .player img{
+        width: 80px;
+        height: 80px;
+    }
+    .courses{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+/* media query for mobile  */
+/* media query for tablet devices */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    /* header area styling start */
+    header{
+        height: 70px;
+        width: 100%;
+        background-color: var(--main-color);
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-area{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .nav-area h1{
+        color: white;
+        font-size: 30px;
+        margin: 0;
+        padding: 0 0 0 60px;
+    }
+    .navigation-item{
+        margin-right: 20px;
+    }
+    .nav-area .navigation-item a{
+        font-size: 17px;
+        padding-left: 10px;
+    }
+    /* header area styling end*/
+    /* container styling start  */
+    .container{
+        background-color: white;
+        width: auto;
+        padding: 0;
+        border-radius: 0px;
+        margin-bottom: 0px;
+    }
+    h2 {
+        display: block;
+        margin-left: 30px;
+    }
+    .line{
+        display: none;
+    }
+    /* container styling end */
+    /* article and course section styling */
+    .blog{
+        display: flex;
+        padding: 20px;
+        margin: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .blog .thambnail img{
+        width: 100%;
+        padding-left: auto;
+        border: .3px solid gray;
+        border-radius: 17px;
+    }
+    .blog .thambnail{
+        padding: 0;
+    }
+    /* article and course section styling */
+}
+
+/* media query for tablet devices */
