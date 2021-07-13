@@ -4,24 +4,60 @@
 /* custon style code start  */
 :root{
     --main-color: #128c7e;
-    --background-color: #d0fff9;
+    --background-color: #71b7cc;
 }
 /* custon style code end  */
 
+/* navigation styling start here  */
+header{
+    height: 60px;
+    background-color: var(--main-color);
+    padding-top: 0;
+    margin-bottom: 15px;
+}
+.nav-area{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-area h1{
+    color: white;
+    font-size: 40px;
+    margin: 0;
+    padding: 0 0 0 200px;
+
+}
+.navigation-item{
+    margin-right: 200px;
+}
+.nav-area .navigation-item a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 30px;
+}
+/* navigation styling end here  */
+
 /* commons style or utilities  */
 body{
+    padding-top: 0;
+    margin: 0;
     font-family: 'Poppins', sans-serif;
     background-color: var(--background-color);
 }
 main{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .container{
     background-color: rgb(255, 255, 255);
     width: 900px;
     padding: 10px 40px 40px 40px;
-
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 /* Top players style start here  */
 .section-title{
@@ -30,10 +66,12 @@ main{
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 25px;
 }
 .player{
     display: flex;
     align-items: center;
+    padding-left: 30px;
 }
 .player img{
     width: 66px;
@@ -42,4 +80,59 @@ main{
 .players-name{
     padding-left: 20px;
 }
+.line{
+    margin: 30px 0;
+}
+
 /* Top players style start here  */
+
+/* top blogs style start */
+.blog .thambnail img{
+    width: 260px;
+}
+.blog-post{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+}
+.blog{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    padding: 5px 5px 0px 5px;
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 10px .5px rgb(192, 192, 192);
+}
+.thambnail{
+    padding-right: 10px;
+}
+
+/* courses style start  here  */
+.courses{
+    display: flex;
+    justify-content: space-between;
+}
+.course{
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px .5px gray;
+}
+.courses .course img{
+    width: 100%;
+}
+.course-info{
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    justify-content: space-between;
+}
+.fa-star.filled{
+    color: gold;
+}
+.fa-star.empty{
+    color: rgb(163, 163, 163);
+}
+/* courses style end  here  */
